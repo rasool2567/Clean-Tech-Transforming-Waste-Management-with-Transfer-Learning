@@ -1,0 +1,21 @@
+<!-- templates/blog.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CleanTech Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>CleanTech Blog</h1>
+        <p>Learn more about biodegradable and non-biodegradable waste management.</p>
+
+        <ul>
+            <li><a href="{{ url_for('blog_single') }}">Understanding Waste Classification</a></li>
+        </ul>
+
+        <a href="{{ url_for('index') }}">← Back to Classifier</a>
+    </div>
+</body>
+</html>

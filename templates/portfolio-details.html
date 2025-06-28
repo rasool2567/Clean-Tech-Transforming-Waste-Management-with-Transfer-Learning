@@ -1,0 +1,22 @@
+<!-- templates/portfolio-details.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CleanTech Project Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>CleanTech: Waste Classification with Deep Learning</h1>
+        <p>This project uses transfer learning and a CNN model trained to identify whether an image of waste is biodegradable or not.</p>
+        <ul>
+            <li><strong>Tools used:</strong> TensorFlow, Keras, Flask, HTML/CSS</li>
+            <li><strong>Model:</strong> Trained using transfer learning with image data</li>
+            <li><strong>Goal:</strong> Promote sustainability by automating waste sorting</li>
+        </ul>
+
+        <a href="{{ url_for('index') }}">← Back to Classifier</a>
+    </div>
+</body>
+</html>
